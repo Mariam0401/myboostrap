@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .profile-card {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .profile-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .feed {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .sidebar {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+        .sort-dropdown {
+            float: right;
+        }
+        .new-posts-badge {
+            position: absolute;
+            top: -10px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+        .ad-section {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">LinkedIn Clone</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Network</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Messaging</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Notifications</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <div class="row">
+           
+            <div class="col-md-3">
+                <div class="profile-card mb-4">
+                    <img src="Mariam (1) (1).png" alt="Profile" class="profile-image">
+                    <h5 class="mt-3">LinkedIn Clone</h5>
+                    <p>Clone</p>
+                    <p>Profile viewers: <strong>51</strong></p>
+                    <p>Post impressions: <strong>216</strong></p>
+                    <a href="#" class="d-block mb-2">See all Premium features</a>
+                    <a href="#" class="btn btn-outline-primary btn-sm">Saved items</a>
+                </div>
+                <div class="sidebar">
+                    <h6>Recent</h6>
+                    <ul class="list-group">
+                        <li class="list-group-item">CISO2CISO Global Cyber Security</li>
+                        <li class="list-group-item">Cyber Security Forum</li>
+                        <li class="list-group-item">Python Web Developers</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="mb-3 position-relative">
+                    <h6 class="new-posts-badge">New posts</h6>
+                    <select class="form-select sort-dropdown w-auto">
+                        <option value="top">Sort by: Top</option>
+                        <option value="recent">Sort by: Recent</option>
+                    </select>
+                </div>
+                <div class="feed mb-3">
+                    <h5>clone growth</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laudantium labore fugiat modi, repellat magnam molestias saepe vel vero quis aliquid aliquam alias animi neque delectus ipsum? Maxime, quae debitis.</p>
+                    <p>You all keep making me proud of our work!</p>
+                </div>
+                <div class="feed">
+                    <h5>Dera A.</h5>
+                    <p>
+                        I am excited to share that we Have made healthcare more accessible for women in Ethiopia through our innovative Telegram platform. With just a few taps, users can access vital health information and services. 
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="sidebar">
+                    <h6>Add to your feed</h6>
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="Mariam (1) (1).png" alt="Profile" class="me-3" style="width: 50px; height: 50px; border-radius: 50%;">
+                        <div>
+                            <p class="mb-0"> Umutoniwase </p>
+                            <small>Chief Marketing Officer</small>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="Mariam (1) (1).png" alt="Profile" class="me-3" style="width: 50px; height: 50px; border-radius: 50%;">
+                        <div>
+                            <p class="mb-0">Rwanda Convention Bureau</p>
+                            <small>Event Services</small>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <img src="Mariam (1) (1).png" alt="Profile" class="me-3" style="width: 50px; height: 50px; border-radius: 50%;">
+                        <div>
+                            <p class="mb-0">Embassy of Rwanda</p>
+                            <small>Government Relations</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="ad-section">
+                    <p>Maximize business growth on LinkedIn Ads, a platform built for B2B.</p>
+                    <button class="btn btn-primary btn-sm">Start now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
